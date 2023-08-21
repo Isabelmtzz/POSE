@@ -25,6 +25,7 @@
 }
 
 .body{
+  background-color: rgb(229, 201, 255);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 
@@ -46,7 +47,6 @@
 
 
 .nav__title{
-  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,8 +145,41 @@
 }
 
 /*============== F A S H I O N  S E C T I O N ===============*/
-.fashion__description{
+.fashion__container{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50vh;
 }
+
+.fashion__description{
+  text-align: center;
+  font-size: var(--body-font);
+}
+
+.fashion__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.fashion__subtitle{
+  font-size: var(--font-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+}
+
+.Fimage1, .Fimage2,
+.Fimage3, .Fimage4,
+.fashion__image{
+  width: 260px;
+  height:  200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1.5rem
+}
+
+.fashion__subtitle
