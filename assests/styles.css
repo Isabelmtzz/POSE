@@ -1,0 +1,184 @@
+:root {
+  --header-height: 3.5rem;
+  
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Red Hat Display', sans-serif;
+  --second-font: 'Kaushan Script', cursive;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.5rem;
+  --big-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-bold: 700;
+  --font-black: 900;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+.body{
+  background-color: rgb(229, 201, 255);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+
+}
+/*========== HEADER NAV ==========*/
+.header, .bg-header{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: background .3s;
+  z-index: 100;
+  height: 80px;
+}
+
+.nav {
+  padding: 20px 0;
+}
+
+
+.nav__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--normal-font-size);
+}
+
+.bg-header{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
+}
+
+.nav__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding-top: 0;
+}
+
+
+.nav__item, .nav-menu,
+.nav__list{
+  font-size: 24px;
+  flex-direction: row;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2.5rem;
+  list-style: none;
+  font-size: var(--smaller-font-size);
+}
+
+.nav__link{
+  color: black;
+  text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+  font-style: 600;
+  letter-spacing: normal;
+}
+
+
+.home__img{
+  width: 190px;
+  height: 290px;
+}
+
+/*=============== H O M E ===============*/
+.home__data{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home__subtitle1{
+  font-size: var(--small-font-size);
+
+}
+
+.home__description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+.container_grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: .5rem;
+}
+
+.home__img img{
+  margin: 5px;
+}
+.Image1{
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  margin: 2rem;
+  width: 190px;
+  height: 290px;
+}
+
+.Image2{
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 19% 100%);
+  margin: 2rem;
+  width: 190px;
+  height: 290px;
+}
+
+/*============== F A S H I O N  S E C T I O N ===============*/
+.fashion__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.fashion__description{
+  text-align: center;
+  font-size: var(--body-font);
+}
+
+.fashion__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.fashion__subtitle{
+  font-size: var(--font-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+}
+
+.Fimage1, .Fimage2,
+.Fimage3, .Fimage4,
+.fashion__image{
+  width: 260px;
+  height:  200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1.5rem
+}
